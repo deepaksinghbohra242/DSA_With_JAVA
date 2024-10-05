@@ -6,18 +6,21 @@ import java.util.ArrayList;
 
 public class Ques1 {
     public static void main(String[] args) {
-        ArrayList<Integer> arr = new ArrayList<>();
-        arr.add(1);
-        arr.add(1);arr.add(1);arr.add(3);arr.add(2);arr.add(2);arr.add(1);
-        int k = 4;
-        ArrayList<Float> res = solve(arr ,k);
-
-//        for(Float r : res){
-//            System.out.printf("%.2f\n", r);
+        int a = 1;
+        int c = a++ + ++a;
+        System.out.println(c);
+//        ArrayList<Integer> arr = new ArrayList<>();
+//        arr.add(1);
+//        arr.add(1);arr.add(1);arr.add(3);arr.add(2);arr.add(2);arr.add(1);
+//        int k = 4;
+//        ArrayList<Float> res = solve(arr ,k);
+//
+////        for(Float r : res){
+////            System.out.printf("%.2f\n", r);
+////        }
+//        for (Float r : res) {
+//            System.out.println(r);
 //        }
-        for (Float r : res) {
-            System.out.println(r);
-        }
     }
 
     private static ArrayList<Float> solve(ArrayList<Integer> arr, int k) {
