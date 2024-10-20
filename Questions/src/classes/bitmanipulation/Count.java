@@ -20,12 +20,6 @@ public class Count {
     }
 
 
-
-
-
-
-
-
     static int count2 (int n){
         int res = 0;
         while(n>0){
@@ -34,7 +28,29 @@ public class Count {
         }
         return res;
     }
+
+    static int count3(int n){
+        int res = 0;
+        while(n>0){
+            if(n%2 != 0){
+                res++;
+            }
+            n = n/2;
+        }
+        return res;
+    }
+    static int count31(int n){
+        int res = 0;
+        while(n>0){
+            if((n&1) == 1){
+                res++;
+            }
+            n = n >> 1;
+        }
+        return res;
+    }
     public static void main(String[] args) {
+        intialise();
         System.out.println(count(10));
 //        System.out.println(16>>1);
     }
